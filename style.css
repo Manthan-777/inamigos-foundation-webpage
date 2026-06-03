@@ -1,0 +1,468 @@
+/* =========================
+   GLOBAL STYLES
+========================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#F8FAFC;
+    color:#2D3748;
+    line-height:1.8;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar{
+    position:sticky;
+    top:0;
+    z-index:1000;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:15px 8%;
+
+    background:white;
+    box-shadow:0 2px 15px rgba(0,0,0,0.08);
+}
+
+.logo h2{
+    color:#2E8B57;
+    font-size:1.4rem;
+}
+
+.logo span{
+    font-size:0.8rem;
+    color:#666;
+}
+
+.nav-links{
+    display:flex;
+    list-style:none;
+    gap:25px;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:#2D3748;
+    font-weight:500;
+    transition:.3s;
+}
+
+.nav-links a:hover{
+    color:#4A90E2;
+}
+
+/* =========================
+   HERO SECTION
+========================= */
+
+.hero{
+    height:100vh;
+
+    background:
+    linear-gradient(
+        rgba(0,0,0,0.55),
+        rgba(0,0,0,0.55)
+    ),
+    url("images/hero.jpg");
+
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.hero-content{
+    max-width:850px;
+    color:white;
+}
+
+.hero h1{
+    font-size:4rem;
+    margin-bottom:10px;
+}
+
+.hero h3{
+    color:#F4C542;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:1.1rem;
+    margin-bottom:30px;
+}
+
+.hero-buttons{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+
+.btn-primary,
+.btn-secondary{
+
+    text-decoration:none;
+    padding:14px 28px;
+    border-radius:40px;
+
+    font-weight:600;
+    transition:.3s;
+}
+
+.btn-primary{
+    background:#2E8B57;
+    color:white;
+}
+
+.btn-primary:hover{
+    background:#236B43;
+    transform:translateY(-3px);
+}
+
+.btn-secondary{
+    background:#F4C542;
+    color:#2D3748;
+}
+
+.btn-secondary:hover{
+    transform:translateY(-3px);
+}
+
+/* =========================
+   CERTIFICATIONS
+========================= */
+
+.certifications{
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+    gap:20px;
+    padding:60px 8%;
+}
+
+.cert-card{
+
+    background:white;
+    padding:25px;
+
+    text-align:center;
+
+    border-radius:15px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,0.08);
+
+    font-weight:600;
+}
+
+/* =========================
+   ABOUT
+========================= */
+
+.about{
+
+    display:flex;
+    align-items:center;
+    gap:50px;
+
+    padding:100px 8%;
+
+    background:#EAF7F0;
+}
+
+.about-text{
+    flex:1;
+}
+
+.about h2{
+    color:#2E8B57;
+    margin-bottom:20px;
+}
+
+.about-image{
+    flex:1;
+}
+
+.about-image img{
+    width:100%;
+    border-radius:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* =========================
+   MISSION & VISION
+========================= */
+
+.mission-vision{
+
+    padding:100px 8%;
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+
+    gap:30px;
+}
+
+.mission-card,
+.vision-card{
+
+    background:white;
+
+    padding:40px;
+
+    border-radius:20px;
+
+    box-shadow:0 8px 25px rgba(0,0,0,0.08);
+}
+
+.mission-card h3,
+.vision-card h3{
+    color:#4A90E2;
+    margin-bottom:15px;
+}
+
+/* =========================
+   PROJECTS
+========================= */
+
+.projects{
+    padding:100px 8%;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:70px;
+    color:#2E8B57;
+}
+
+.project-row{
+
+    display:flex;
+    align-items:center;
+    gap:50px;
+
+    margin-bottom:80px;
+}
+
+.reverse{
+    flex-direction:row-reverse;
+}
+
+.project-image,
+.project-content{
+    flex:1;
+}
+
+.project-image img{
+    width:100%;
+    border-radius:20px;
+    height:350px;
+    object-fit:cover;
+
+    box-shadow:0 10px 25px rgba(0,0,0,0.15);
+}
+
+.project-content h3{
+    color:#2E8B57;
+    margin-bottom:15px;
+}
+
+/* =========================
+   IMPACT
+========================= */
+
+.impact{
+
+    background:#EAF7F0;
+
+    padding:100px 8%;
+
+    text-align:center;
+}
+
+.impact h2{
+    margin-bottom:50px;
+    color:#2E8B57;
+}
+
+.impact-grid{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(220px,1fr));
+
+    gap:25px;
+}
+
+.impact-card{
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:20px;
+
+    box-shadow:0 8px 20px rgba(0,0,0,0.08);
+
+    font-weight:600;
+
+    transition:.3s;
+}
+
+.impact-card:hover{
+    transform:translateY(-8px);
+}
+
+/* =========================
+   GALLERY
+========================= */
+
+.gallery{
+
+    padding:100px 8%;
+    text-align:center;
+}
+
+.gallery h2{
+    color:#2E8B57;
+    margin-bottom:50px;
+}
+
+.gallery-grid{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(280px,1fr));
+
+    gap:20px;
+}
+
+.gallery-grid img{
+
+    width:100%;
+    height:280px;
+
+    object-fit:cover;
+
+    border-radius:20px;
+
+    transition:.4s;
+}
+
+.gallery-grid img:hover{
+
+    transform:scale(1.05);
+}
+
+/* =========================
+   CTA
+========================= */
+
+.cta{
+
+    text-align:center;
+
+    padding:100px 8%;
+
+    color:white;
+
+    background:
+    linear-gradient(
+        135deg,
+        #2E8B57,
+        #4A90E2,
+        #F4C542
+    );
+}
+
+.cta h2{
+    font-size:2.5rem;
+    margin-bottom:20px;
+}
+
+.cta p{
+    max-width:700px;
+    margin:auto;
+    margin-bottom:35px;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer{
+
+    background:#1F2937;
+
+    color:white;
+
+    text-align:center;
+
+    padding:50px 20px;
+}
+
+footer h3{
+    margin-bottom:15px;
+}
+
+footer p{
+    margin-bottom:8px;
+}
+
+.copyright{
+    margin-top:20px;
+    color:#ccc;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media(max-width:900px){
+
+    .navbar{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    .nav-links{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .hero h1{
+        font-size:2.8rem;
+    }
+
+    .about{
+        flex-direction:column;
+    }
+
+    .project-row,
+    .reverse{
+        flex-direction:column;
+    }
+}
